@@ -1,6 +1,7 @@
 import React,{useState, useCallback, memo}from 'react';
 import Movie from './Movie';
 import LoadingBar from 'top-loading-bar/dist';
+import {BsSearch} from "react-icons/Bs";
 
 const Home = () => {
     const [value, setValue] = useState('');
@@ -41,9 +42,11 @@ const ShowResult = useCallback(()=>{
       />
 
     <div className='mt-2 md:w-3/5 md:text-xl'>
-        <div className=' flex flex-row justify-center'>
+        <div className=' flex flex-row justify-center bg-yellow-100'>
             <input className='border border-black rounded-md p-1 ' type="text" value={value} onChange={(e)=>{setValue(e.target.value)}} />
-            <button className='p-2 bg-blue-900 rounded-lg text-yellow-400 mx-1 hover:bg-blue-600' onClick={getMovie}>Search</button>
+            <button className='p-2 bg-blue-900 rounded-lg text-yellow-400 mx-1 hover:bg-blue-600' onClick={getMovie}>
+                <BsSearch/>
+            </button>
         </div>
         <ShowResult/>
     </div>

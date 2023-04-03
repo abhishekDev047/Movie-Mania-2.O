@@ -9,7 +9,7 @@ const Movie = ({src,name,plot,actors,awards,earning,country,director,genre,lang 
   }
   if(res === "True"){
   return (
-  <div className="mt-2">
+  <div className="mt-2 bg-yellow-50">
     <div className="flex flex-col items-center">
       <p className="text-2xl">{name}</p><hr />
       <p className="px-2 text-center">{plot}</p>
