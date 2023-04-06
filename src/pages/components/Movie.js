@@ -4,7 +4,7 @@ const Movie = ({src,name,plot,actors,awards,earning,country,director,genre,lang 
  
   if (res === "False") {
     return(
-      <div className="text-center text-lg mt-5"> Sorry could not found <i>"{val}"</i> </div>
+      <div className="text-center text-lg mt-5"> Sorry could not found <i>{val}</i> </div>
     )
   }
   if(res === "True"){
