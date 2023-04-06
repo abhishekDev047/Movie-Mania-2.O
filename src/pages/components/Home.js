@@ -1,7 +1,7 @@
 import React,{useState, useCallback, memo}from 'react';
 import Movie from './Movie';
 import LoadingBar from 'top-loading-bar/dist';
-import {BsSearch} from "react-icons/Bs";
+import {BsSearch} from "react-icons/bs";
 
 const Home = () => {
     const [value, setValue] = useState('');
